@@ -14,4 +14,5 @@ func SelectionSort(arr []int) []int {
 			arr[i], arr[min] = arr[min], arr[i]
 		}
 	}
+	return arr
 }
