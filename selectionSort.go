@@ -3,15 +3,15 @@ package selectioSort
 func SelectionSort(arr []int) []int {
 	count := len(arr)
 	for i := 0; i < count; i++ {
-		min := i                         //save minimum
+		minimum := i                     //save minimum
 		for j := i + 1; j < count; j++ { //next element from i
-			if arr[j] < arr[min] { //if current less than minimum
-				min = j // new min
+			if arr[j] < arr[minimum] { //if current less than minimum
+				minimum = j // new minimum
 			}
 
 		}
-		if min != i {
-			arr[i], arr[min] = arr[min], arr[i]
+		if minimum != i {
+			arr[i], arr[minimum] = arr[minimum], arr[i]
 		}
 	}
 	return arr
