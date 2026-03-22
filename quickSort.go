@@ -21,7 +21,7 @@ func QuickSort(arr []int) []int {
 			moreArr[i] = arr[i]
 		}
 	}
-	combined := append(QuickSort(lessArr), QuickSort(moreArr))
+	combined := append(QuickSort(lessArr), QuickSort(moreArr)...)
 
 	return combined
 }
